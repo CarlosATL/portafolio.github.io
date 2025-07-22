@@ -1,0 +1,286 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    margin: 0;
+    padding: 0;
+    
+}
+main  {
+  background-color: #f8f9fa;
+}
+ 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif
+    
+}
+
+h1, h2, h3 {
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+nav{
+    background-color: #ffffff;
+    border-bottom: 2px solid black;
+}
+
+nav a:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+
+nav img{
+    width: 80px;
+    height: 60px;
+}
+
+.logo-menu{
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: auto;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+
+
+.nombre {
+  background-image: linear-gradient( 178.7deg,  rgb(0, 0, 0) 5.6%, rgb(20, 114, 185) 95.3% );
+  color: #FFFFFF;
+}
+ 
+.nombre img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+ 
+.conoceme  {
+    
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.568)), url(../img/fondo-prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    padding: 100px 20px;
+}
+.conoceme article   {
+    color: white;
+    padding: 50px;
+}
+
+.areas{
+    background-color: #f5f7fa;
+    
+}
+ 
+.areas img {
+ 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ 
+.areas .imagen      {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+ 
+.lim {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ 
+.proyectos {
+   background-image: linear-gradient( 178.7deg,  rgb(18, 19, 27) 5.6%, rgb(20, 114, 185) 95.3% );
+   
+}
+.proyectos h1{
+    color: white;
+}
+ 
+.proyecto-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+ 
+.proyecto-card img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+}
+ 
+.proyecto-card .overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+ 
+}
+ 
+.proyecto-card:hover img {
+    filter: brightness(50%);
+}
+ 
+.proyecto-card:hover .overlay {
+    opacity: 1;
+}
+ 
+.proyecto-card .overlay h5 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-decoration: none;
+}
+
+.accordeon{
+    background-color: #f8f9fa;
+    
+}
+
+.testimonios{
+   background-image: linear-gradient( 178.7deg,  rgb(18, 19, 27) 5.6%, rgb(20, 114, 185) 95.3% );
+   color: white;
+}
+
+
+
+.contactanos {
+  background-color: #f8f9fa;
+  
+  
+}
+
+.contactanos .container{
+    background: linear-gradient(135deg, #1c272c 0%, #000000 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: -2px 7px 16px -2px rgba(0,0,0,0.69);
+
+}
+
+
+
+
+ 
+.textura{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.308)), url(../img/textura-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+}
+ 
+.card-body h5{
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+ 
+#carouselExampleCaptions {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  max-width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.788);
+  border-radius: 0.5rem;
+}
+
+.icono-social {
+      width: 60px;
+      height: 60px;
+      font-size: 35px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      border-radius: 50%;
+    }
+
+.icono-social:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+
+    .bi-facebook{
+        color: #1877F2;
+    }
+    .bi-instagram{
+        color: #833AB4;
+
+    }
+    .bi-whatsapp{
+        color: #25D366;
+    }
+    .bi-telegram{
+        color: #0088cc;
+    }
+    .bi-linkedin{
+        color: #0A66C2;
+    }
+
+    .subir {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      cursor: pointer;
+      z-index: 1000;
+      text-decoration: none;
+      color: rgb(192, 145, 43);
+    }
+
+    .subir i {
+      font-size: 2.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .subir:hover i {
+      color: #008cff;
+      transform: scale(1.1);
+    }
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
+
+

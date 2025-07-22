@@ -1,0 +1,245 @@
+html, body {
+    overflow-x: hidden;
+}
+
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #e8e9eb4d;
+    font-size: 18px;
+    line-height: 1.7;
+}
+header {
+    background-color: #008001;
+    padding: 20px 0;
+}
+h1  {
+    color: #f8ff93;
+    text-align: center;
+    font-size: 30px;
+}
+h3  {
+    color: #055902;
+}
+section {
+  margin: 20px 0;
+}
+
+p, li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px 0 30px;
+    gap: 20px;
+}
+ 
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+ 
+.menu a:hover {
+    text-decoration: underline;
+    color: #e6ffe6;
+}
+
+main
+ {
+    padding: 15px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+.section {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; 
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ 
+.section-hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/frog.jpg);
+    opacity: 0.9;
+    padding: 10%;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    
+   
+}
+
+.section-hero article {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+ 
+.section h2 {
+    color: #4D803C;
+    margin-bottom: 10px;
+}
+ 
+.titulos-actividades {
+    font-weight: bold;
+    color: #055902;
+ 
+}
+ 
+ul li {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+.ul2 li        {
+    color: #5ABD99;
+   
+}
+ 
+.contenedor-actividades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+ 
+.carta-actividades{
+    background-color: #e3f3e3;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+   
+}
+ 
+
+.tabla-responsive {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+ 
+table {
+    width: 100%;
+    table-layout: auto;
+    word-wrap: break-word;
+}
+
+ 
+table th, table td {
+    text-align: left;
+    border: 1px solid black;
+    padding: 0.5rem;
+   
+}
+ 
+table th {
+    background-color: #008000;
+    color: white;
+}
+ 
+tr:hover {
+    background-color: #F2F2F2;
+}
+
+.clima  {
+    border-left: 6px solid yellow;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer  {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  background-color: #333;
+  color: #b9b8b8;
+  
+}
+footer:hover{
+    color: white;
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+    .contenedor-actividades {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px 12px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .section, main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+
+    .section-hero {
+        padding: 15% 5%;
+        background-attachment: scroll; /* mejor para móviles */
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .carta-actividades {
+        font-size: 14px;
+    }
+}

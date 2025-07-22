@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+/* configuracion de logo */
+.logo    {
+ width: 70px;
+ height: auto;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* configuracion de menu */
+
+nav {
+
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+}
+
+/* configuracion de borrado de decorativos general */
+ul a, ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover  {
+color: rgb(169, 214, 214);
+
+}
+
+/* configuracion lista central */
+.lista-central {
+    display: flex;
+}
+.lista-central li{
+    margin: 10px;
+}
+
+/* configuracion lista derecha */
+.lista-derecha {
+    display: flex;
+}
+.lista-derecha li{
+    margin: 10px;
+}
+
+
+/* configuracion de hero */
+
+/* Correción */
+
+.fondo-negro {
+      display: flex;
+      background-color: black;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+}
+
+.slogan {
+      color: white;
+      padding: 20px;
+      font-size: 30px;
+      flex: 1 1 300px;
+}
+
+.carro-hero {
+      flex: 1 1 300px;
+      text-align: center;
+      padding: 20px;
+}
+
+.carro-hero img {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+}
+
+/* configuracion de cartas */
+
+.carta{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+.imagen-carro{
+ 
+    flex: 1;
+    min-width: 300px;
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.carro1{
+    background-image: url("../img/carro1.jpg");
+}
+
+.carro2{
+    background-image: url("../img/carro2.jpg");
+}
+.carro3{
+    background-image: url("../img/carro3.jpg");
+}
+.carro4{
+    background-image: url("../img/carro4.jpg");
+}
+
+.informacion{
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.informacion h1{
+    padding-top: 20px;
+    color: gray;
+}
+
+
+.informacion p{
+    padding-top: 20px;
+}
+
+.contenedor-btn{
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    
+}
+
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.seccion-carros{
+    display: flex;
+    height: auto;
+    gap: 40px;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(236, 234, 234, 0);
+    
+}
+
+.izquierda article{
+margin-bottom: 40px;
+}
+.derecha article{
+margin-bottom: 40px;
+}
+
+.contenedor-lugar   {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+.contenedor-mapa    {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40px;
+    border-radius: 0px 0px 30px 30px;
+    overflow: hidden;
+    
+}
+
+.contenedor-mapa p{
+    flex:1;
+    padding-top: 20px;
+}
+
+.mapa{
+    width: 100%;
+    max-width: 900px;
+    padding-top: 40px;
+}
+
+.contenedor-opciones    {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+
+.caja   {
+    flex: 1;
+    width: 100%; 
+    max-width: 750px;
+    height: auto;
+    color: white;
+    background-color: #000000; 
+    border: 2px solid #2c3e50; 
+    border-radius: 10px; 
+    align-content: center;
+    text-decoration: none;
+}
+
+.caja:hover{
+
+    background-color: aliceblue;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .seccion-carros {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
